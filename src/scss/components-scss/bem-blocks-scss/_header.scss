@@ -1,0 +1,260 @@
+.header {
+    background-image: url(../img/Fon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 35px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.menu__list {
+    &-item {
+        margin-left: 86px;
+    }
+
+    &-link {
+        font-family: 'Cormorant Infant';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0em;
+        color: $color-greenb;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+        }
+    }
+
+}
+
+
+.--menu-icon::before {
+    content: url(../img/bx_bxs-right-arrow.svg);
+    width: 6px;
+    height: 8px;
+}
+
+.catalog:hover .catalog__list {
+    display: block;
+}
+
+
+.catalog {
+    position: relative;
+
+}
+
+.catalog__list {
+    z-index: 2;
+    position: absolute;
+
+    background: #FFFEFE;
+    box-shadow: 4px 4px 20px #C2CCCA;
+    border-radius: 8px;
+    padding: 19px 24px;
+    display: none;
+    
+    &-item {
+        margin-top: 25px;
+        display: block;
+    }
+
+    &-link {
+        font-family: 'Cormorant Infant';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0em;
+        color: $color-greenb;
+        text-transform: uppercase;
+        display: block;
+        margin-top: 19px;
+
+        &:first-child {
+            margin-bottom: 19px;
+        }
+        
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+    }
+}
+
+.telephone {
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: $color-greenb;
+
+    &::before {
+        content: url(../img/teleohone.svg);
+        width: 26px;
+        height: 26px;
+        background: linear-gradient(1.36deg, #B0D3CE 12.29%, #FFEDCE 83.89%);
+        box-shadow: -4px -4px 20px #FFFFFF,
+            4px 4px 20px #CFD7D3;
+        border-radius: 40px;
+        padding: 21px 20px;
+        margin-right: 10px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+
+}
+
+.basket {
+    position: relative;
+
+    &__counter{
+        font-family: 'Raleway';
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12px;
+        position: absolute;
+        border-radius: 50%;
+        padding: 3px 4px 3px 7px;
+        background-color: $color-lite;
+        z-index: 2;
+        width: 19px;
+        height: 19px;
+        top: -10px;
+        left: 25px;
+    }
+}
+
+.img__title {
+    display: block;
+    margin: 173px auto 0;
+}
+
+.header__buy {
+    box-shadow: 4px 4px 20px #C2CCCA,
+    -8px -8px 20px #FFFFFF;
+    border-radius: 40px;
+    padding: 26px 110px;
+    color: #FFFFFF;
+    display: block;
+    margin: 34px auto 0;
+    background: $color-green;
+    width: 328px;
+    height: 69px;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    &:hover {
+        color: $color-green;
+        background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+        /* iso */
+
+        box-shadow: 4px 4px 20px #C2CCCA,
+        -8px -8px 20px #FFFFFF;
+    }
+}
+
+.header__info {
+    margin-top: 160px;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &::before {
+        content: url("../img/image 2.png");
+        position: absolute;
+        left: -90px;
+        bottom: -105px;
+        z-index: 3;
+    }
+
+    &::after {
+        content: url("../img/image 3.png");
+        position: absolute;
+        right: -90px;
+        bottom: -85px;
+        z-index: 3;
+    }
+
+
+}
+
+
+
+.header__info-item {
+    margin-left: 190px;
+    text-align: center;
+    width: 182px;
+}
+
+.item-hedhog__image {
+    background: $color-lite;
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+
+}
+
+.item-headhog {
+    text-align: center;
+    
+}
+
+.item-headhog__icon {
+    padding: 35px  40px;
+    display: block;
+    margin: 0 auto;
+   
+}
+
+.item-hedhog__title {
+    margin-top: 30px;
+    font-family: 'Cormorantinfant';
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    color: $color-green;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+}
+
+.item-headhog__text {
+    margin-top: 8px;
+    display: block;
+    text-align: center;
+    width: 114px;
+}
+
+
+.syringe-solid__image {
+     background: $lite-green;
+}
+
+.syringe-solid {
+    padding: 50px 50px;
+}
+
+.heart-twotone__image {
+    background: $color-green;
+}
+
+.heart-twotone {
+    padding: 50px 50px;
+}
